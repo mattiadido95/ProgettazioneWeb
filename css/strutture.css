@@ -1,0 +1,1404 @@
+/* 
+VALIDAZIONE: OK;
+
+
+
+*/
+
+
+
+/*-------css struttura base----------*/
+html{
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; 
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.top_bar{
+    width: 100%;
+    height: 80px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 73, 100);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 5px !important;
+}
+
+.reload{
+    margin-right: 20px !important;
+    padding-left: 100px !important;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+.reload img{
+    height: 100%;
+    width: 100%;
+}
+
+.bottom_bar{
+    width: 100%;
+    height: 80px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(49, 73, 100);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 5px !important;
+}
+
+.contenitore-centrale{
+    width: 100%;
+    height: 755px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+h1{
+    font-size: 30px !important;
+    font-weight: bold !important;
+}
+
+select {
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    text-align: center;
+    text-align-last: center;
+}
+
+option {
+    text-align: left;
+}
+
+
+input{
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    text-transform: uppercase;
+}
+
+#password{
+    text-transform: none !important;
+}
+
+.top_bar form{
+    margin: 0px !important;
+} 
+
+form{
+    margin: 0 !important;
+}
+
+/* css button indietro */
+
+.indietro {
+    background:none;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 0px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .indietro span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .indietro span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .indietro:hover span {
+    padding-right: 20px;
+  }
+  
+  .indietro:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+/*-------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------css pagina CONTATTI---------------------------------*/
+
+#img_profile{
+    width: 270px;
+    height: 270px;
+    background-image: url("../css/img/clipart548777-ConvertImage.png");
+    background-size: cover;
+    margin-bottom: 40px;
+    
+    margin-top: 10px;
+}
+
+.tab-contatti{
+    height: 188px;
+    width: 420px;
+    background-color: rgba(61, 62, 63, 0.2); 
+    text-align: center;
+    border-radius: 7px;
+    border: 2px solid rgb(49, 73, 100);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+    margin-bottom: 10px;
+}
+
+.tab-contatti tbody{
+    height: 100% !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tab-contatti tbody tr{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-contatti tbody tr td{
+    border-bottom: 2px solid white;
+    height: 40px; 
+    border-radius: 4px;
+    color: #314964;  
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.info{
+    text-align: center;
+    font-size: 20px;
+    width: 280px !important;
+    vertical-align: middle;
+  
+}
+
+
+.bold{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+    width: 130px !important;
+    vertical-align: middle;
+    color: white;
+}
+/* SOCIAL BUTTON */
+
+.fa {
+    padding: 19px;
+    font-size: 30px;
+    width: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: rgb(59, 89, 152);
+    color: rgb(255, 255, 255);
+
+}
+
+#telegram{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#telegram:hover{
+    opacity: 0.7;
+}
+
+.social{
+    height: 60px !important;
+    width: 410px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.social td{
+    width: 70% !important;
+    height: 60px !important;
+    border:none !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around !important;
+    flex-direction: row;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+/* ---------------CSS PAGINA PROFILO------------------------ */
+
+.profilo{
+    height: 315px;
+    width: 500px;
+    background-color: rgba(61, 62, 63, 0.2); 
+    text-align: center;
+    border-radius: 7px;
+    border: 3px solid rgb(49, 73, 100);
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.profilo tbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profilo tbody tr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#profilo-img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.profilo td{
+        border-bottom: 2px solid white;
+        height: 40px; 
+        border-radius: 4px;
+        color: rgb(49, 73, 100);   
+        width: 245px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#profilo-img img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+/*---------------------css pagina REGOLAMENTO-----------------------------------*/
+
+#corpo{
+    height: 750px;
+    width: 70%;
+    margin: 15px;
+    border: rgb(49, 73, 100) solid 3px;
+    border-radius: 7px;
+    background-color: rgba(61, 62, 63, 0.2); 
+    color: rgb(49, 73, 100);
+    font-size: 20px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+/* li{
+    font-weight: bold;
+}
+
+p{
+    font-weight: normal;
+} */
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+/*---------------------css pagina INFO.html-----------------------------------*/
+
+#informazioni{
+    height: 750px;
+    width: 40%;
+    margin: 15px;
+    border: rgb(49, 73, 100) solid 3px;
+    border-radius: 7px;
+    background-color: rgba(61, 62, 63, 0.2); 
+    color: rgb(49, 73, 100);
+    font-size: 20px;
+    overflow-y: auto;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+/* li{
+    font-weight: bold;
+}
+
+p{
+    font-weight: normal;
+} */
+
+/* -------------------------------------------------------------------------------------- */
+
+
+/* -----------------------------------pagina LOGIN------------------ */
+
+
+.container{
+    /* border: 3px rgb(49, 73, 100) solid; */
+    border-radius: 7px;
+    background-color: rgb(49, 73, 100);
+    width: 430px;
+    height: 750px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    text-align: center;
+    display: block;
+}
+
+
+#ball{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.imgcontainer{
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    border: rgb(49, 73, 100) 3px solid;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.tab-login{
+    height: 250px;
+    width: 330px;
+    border: rgb(255, 255, 255) 3px solid;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.tab-login tbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    height: 250px;
+    width: 330px;
+    
+}
+
+.tab-login tbody tr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    height: 50px;
+}
+
+.tab-login tbody tr td{
+    color: rgb(255, 255, 255) !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.button-cell{
+    width: 70% !important;
+}
+
+.button{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold; 
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+
+.login a {
+    color: rgb(255, 255, 255);
+}
+
+.input-text{
+    text-align: center !important;
+    width: 150px;   
+
+}
+
+.psw a{
+    width: 162px !important;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+
+/* ----------------------------css pagina RECUPERO PASSWORD---------------------------------- */
+
+.contenitoreRP{
+    /* border: 3px rgb(49, 73, 100) solid; */
+    border-radius: 7px;
+    background-color: rgb(49, 73, 100);
+    width: 750px;
+    height: 430px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+}
+
+.contenitoreRP form{
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.contenitoreRP form table{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenitoreRP form table tbody{
+    width: 100% !important;
+    height: 100% !important;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenitoreRP form table tbody tr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+}
+
+.contenitoreRP form table tbody tr td{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.input-RP{
+    width: 260px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.select-RP{
+    width: 266px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* -------------------------------css pagina registrazione utente--------------------------------------- */
+
+.registrazione{
+    background-color: rgb(49, 73, 100);
+    width: 950px;
+    height: 670px;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    overflow: auto;
+}
+
+.registrazione table{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registrazione table tbody{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registrazione table tbody tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.registrazione table tbody tr td{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+
+}
+
+.registrazione input{
+    text-align: center;
+    width: 260px;
+    text-transform: uppercase;
+}
+
+.registrazione select{
+    width: 264px;
+}
+
+.avatar_img{
+    display: flex;
+    justify-content: center ;
+    flex-direction: row;   
+}
+
+
+.avatar_choice{
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 0px;
+}
+
+.avatar_choice input{
+    height: 13px !important;
+    width: 13px !important;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+}
+
+#avatar-tr{
+    height: 80px !important;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------css pagina NUOVO TEAM----------------------------------------------- */
+
+.new-team{
+    background-color: rgb(49, 73, 100);
+    width: 450px;
+    height: 260px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    margin: 30px !important;
+}
+
+#text-newteam{
+    color: white;
+    text-align: center;
+}
+
+.new-team table{
+    height: 60%;
+    width: 85%;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.new-team table tbody{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.new-team table tbody tr{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.new-team table tbody tr td{
+    height: 60px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    flex-direction: row;
+}
+
+.new-team input{
+    text-align: center;
+    width: 170px;
+    text-transform: uppercase;
+}
+
+#error-row{
+    width: 90% !important;
+    text-align: center;
+
+}
+
+/* -----------------------------------css pagina NUOVO-ROSTER ---------------------------------------- */
+
+.new-roster{
+    background-color: rgb(49, 73, 100);
+    width: 750px;
+    height: 750px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    margin: 10px;
+}
+
+
+.new-roster table{
+    height: 65%;
+    width: 85%;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.new-roster table tbody{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.new-roster table tbody tr{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.new-roster table tbody tr td{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    flex-direction: row;
+    text-align: center;
+}
+
+.new-roster select{
+    text-align: center;
+    width: 250px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------css pagina NUOVA LEGA-------------------------------------- */
+
+.nuova-lega{
+    background-color: rgb(49, 73, 100);
+    width: 550px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    margin: 30px !important;
+}
+
+.nuova-lega table{
+    height: 60%;
+    width: 85%;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.nuova-lega table tbody{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nuova-lega table tbody tr{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nuova-lega table tbody tr td{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    flex-direction: row;
+    text-align: center;
+}
+
+.nuova-lega select{
+    text-align: center;
+    width: 180px;
+}
+
+.nuova-lega input{
+    text-align: center;
+    width: 180px;
+    text-transform: uppercase;
+}
+
+
+/* ----------------------------------css pagina MODIFICA LEGA------------------------------------ */
+
+.modifica-lega{
+    height: 390px;
+    min-width: 683px;
+    max-width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: auto;
+    margin: 30px !important;
+    border: rgb(49, 73, 100) solid 3px;
+    background-color: rgba(61, 62, 63, 0.2); 
+    border-spacing: 2px !important;
+    color: white;
+    text-align: center;
+    
+}
+
+.modifica-lega img{
+    width: 30px;
+    height: 30px;
+ 
+}
+
+.modifica-lega tbody{
+    width: 677px;
+    height: 350px;
+    display: block;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(49, 73, 100);
+}
+.modifica-lega thead{
+    height: 64px;
+    width: 677px; 
+   /*  border-spacing: 2px !important; */  
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.modifica-lega thead tr{
+    width: 100%;
+    height: 58px;
+    display: flex;
+   /*  justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+}
+
+.modifica-lega tbody tr{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modifica-lega thead tr th{
+    background-color: rgb(49, 73, 100) !important;
+    border-radius: 5px;
+    height: 55px;
+    width: 221px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 1px;
+    margin-right: 1px;
+    
+}
+
+.modifica-lega tbody tr td{
+    border-radius: 5px;
+    height: 55px;
+    width: 221px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: 2px solid white !important;   
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.modifica-img{
+    width: 110px;
+}
+
+.click_me{
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+#time_check{
+    width: 100% !important;
+    font-weight: bold;
+}
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.tab_amm{
+    height: 740px;
+    /* width: 1865px; */
+    width: 99%;
+    background-color: rgba(61, 62, 63, 0.2); 
+    text-align: center;
+    border-radius: 7px;
+    border: 3px solid rgb(49, 73, 100);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;    
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+}
+
+#iscritti td, #iscritti th{
+    width:11%;
+}
+
+.tab_amm thead{
+    height: 65px;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
+    /* margin-left: 1px; */
+    width: 100%;
+
+}
+
+.tab_amm tbody {
+    /* display: flex; */
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    /* height: 700px; */
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 1px;
+    width: 100%;
+    height: 100%;
+}
+
+.tab_amm tbody tr, .tab_amm thead tr{
+    display: flex;
+    width: 100%;
+    height: 55px !important;
+    justify-content:center;
+    align-items: center;
+    margin: 1px;
+}
+
+
+
+.tab_amm thead tr th {
+    font-weight: bold;
+    background-color: rgb(49, 73, 100);
+    height: 55px;
+    width: 205px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+.tab_amm tbody tr td{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    height: 55px;  
+    width: 205px; 
+    border-radius: 4px;
+    color: rgb(49, 73, 100); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 1px;
+    
+}
+
+.tab_amm img, .amm_img{
+    height: 42px;
+    width: 42px;
+}
+
+
+
+#myInput {
+    width: 90%;
+    font-size: 16px;
+    padding: 12px 0px 12px 0px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-transform: uppercase;
+  }
+
+
+
+/*   ----------------------------------------------------------------------------------------------------- */
+
+.tab_player{
+    height: 740px;
+    /*width: 1470px;*/
+    width: 99%;
+    background-color: rgba(61, 62, 63, 0.2); 
+    text-align: center;
+    border-radius: 7px;
+    border: 3px solid rgb(49, 73, 100);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;    
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+}
+
+#player td,#player th{
+    width:14.20% !important;
+    
+}
+
+.tab_player thead{
+    height: 65px;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
+    /* margin-left: 1px; */
+    width: 100%;
+}
+
+.tab_player thead tr {
+    margin-right: 17px !important;
+}
+
+.tab_player tbody {
+    /* display: flex; */
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    /* height: 700px; */
+    height: 100%;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* margin-left: 1px; */
+    width: 100%;
+}
+
+.tab_player tbody tr, .tab_player thead tr{
+    display: flex;
+    width: 100%;
+    height: 55px !important;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 1px;
+}
+
+.tab_player thead tr th {
+    font-weight: bold;
+    background-color: rgb(49, 73, 100);
+    height: 55px;
+    width: 205px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+.tab_player tbody tr td{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    height: 50px;  
+    width: 205px; 
+    border-radius: 4px;
+    color: rgb(49, 73, 100); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 1px;
+    
+}
+
+.tab_player img{
+    height: 31px;
+    width: 31px;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.tab_team{
+    height: 740px;
+    /* width: 1055px; */
+    width: 65%;
+    background-color: rgba(61, 62, 63, 0.2); 
+    text-align: center;
+    border-radius: 7px;
+    border: 3px solid rgb(49, 73, 100);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;    
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+}
+
+#team td, #team th{
+    width:20%;
+}
+
+.tab_team thead{
+    height: 65px;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
+    /* margin-left: 1px; */
+    width: 100%;
+
+}
+
+.tab_team tbody {
+    /* display: flex; */
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    /* height: 700px; */
+    height: 100%;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* margin-left: 1px; */
+    width: 100%;
+}
+
+.tab_team tbody tr, .tab_team thead tr{
+    display: flex;
+    width: 100%;
+    height: 50px !important;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 1px;
+}
+
+
+
+.tab_team thead tr th {
+    font-weight: bold;
+    background-color: rgb(49, 73, 100);
+    height: 55px;
+    width: 205px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+.tab_team tbody tr td{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    height: 50px;  
+    width: 205px; 
+    border-radius: 4px;
+    color: rgb(49, 73, 100); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 1px;
+    
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.punteggi {
+      
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.half {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2px;
+    
+
+}
+
+.half form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.half iframe{
+   
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#myTable{
+    height: 550px;
+    width: 99%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;     
+}
+
+#myTable thead tr{
+    width:100%;
+    margin-right: 17px;
+}
+
+#myTable thead th {
+    height: 45px;
+    width: 25%;
+
+}
+
+#myTable thead  {
+    height: 65px;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#myTable tbody{
+    height: 100%;
+    /* height: 535px; */
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+
+}
+
+#myTable tbody tr{
+    height: 35px !important;
+    display: flex;
+    align-items: center;
+}
+
+#myTable tbody tr td{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    height: 34px;  
+    width: 205px; 
+    border-radius: 4px;
+    color: rgb(49, 73, 100);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#myTable input{
+    text-align: center;
+    text-transform: uppercase;
+}
+.info-update{
+    width: 600px;
+}

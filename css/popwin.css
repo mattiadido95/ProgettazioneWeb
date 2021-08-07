@@ -1,0 +1,258 @@
+/* 
+VALIDAZIONE: OK;
+
+*/
+
+
+
+html{
+    
+    height: 97%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; 
+    width: 100%;   
+    height: 100%; 
+    margin: 8px !important;
+}
+
+.top_bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 73, 100);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;   
+
+}
+
+.bottom_bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(49, 73, 100);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+ 
+
+}
+
+.contenitore-centrale{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.reload{
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.reload img{
+    height: 32px;
+    width: 32px;
+}
+table{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start; 
+    height: 286px;
+    width: 338px;
+    border-radius: 7px;
+    border: 3px solid rgb(49, 73, 100) !important;
+    margin: 3px;
+    background-color: rgba(61, 62, 63, 0.2); 
+    margin: 15px !important;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+   
+}
+
+#insertTM, #deleteTM {
+    width: 325px;
+
+}
+
+form{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+
+
+input{
+    text-align: center;
+}
+
+#myInput {
+    width: 95%;
+    font-size: 16px;
+    padding: 12px 0px 12px 0px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  td{
+    border-bottom: 2px solid white !important;
+    border-radius: 4px;
+    color: rgb(49, 73, 100);   
+    height: 30px;
+    font-size: 16px !important;
+    width: 134px !important;
+    text-align: center !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1px !important;
+}
+
+th{
+    width: 134px;
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+    background-color: rgb(49, 73, 100);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1px !important;
+}
+
+tr{
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+}
+tbody{
+    width: 100% !important;
+    display: inline-block !important;
+    height:240px ;
+}
+
+thead{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    margin-left: 1px !important;
+}
+.short{
+    width: 25px !important;
+}
+/* per la deleteplayer.php */
+
+#deletePL{
+    height:280px ;
+}
+
+
+
+
+
+/* -------------------------------- */
+
+tbody{
+    overflow: auto;
+}
+
+
+.newPL{
+    width: 370px;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+   /*  margin-bottom:150px !important; */
+
+}
+
+.newPL tr td{
+    width: 50% !important;
+}
+
+
+/* css button */
+
+
+
+.button{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px; 
+    color: rgb(49, 73, 100);
+}
+
+
+h1{
+    font-size: 20px !important;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+
+
+#text{
+    font-weight: bolder;
+    font-size: 30px !important;
+    margin: 10px;
+    color: rgb(49, 73, 100);
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    text-align: center;
+}
+
+p{
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    font-size: 20px;
+}
+
+
+
+
+.upPL{
+    width: 350px !important;
+    height: 165px;
+    font-weight: bold;
+    margin-bottom: 190px !important;
+    margin-top: 50px !important;
+}
+
+.upPL tbody{
+    overflow: hidden;
+}

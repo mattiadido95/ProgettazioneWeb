@@ -1,0 +1,494 @@
+/* -------------------CODICE CSS PER LE PAGINE HOME, ROSTER E LEGA---------------------------*/
+
+
+
+/*-------------------------STRUTTURA BASE PAGINA---------------------------- */
+
+html {
+    font-weight: bold !important;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+
+    width: 100%;
+    background-color: transparent;
+}
+
+.main_body{
+    margin: 0px;
+    background: url(../css/img/sfondo.jpg);
+    background-repeat: no-repeat !important;
+    background-position: center center;
+    background-size: 100% 100% !important;
+}
+
+header{
+    margin-top: 5px !important;
+    height: 175px;
+}
+
+/*INIZIO CSS FOOTER*/
+.wrapper {
+    width: 100%;
+    flex: 1 0 auto;
+    background-color: transparent;
+}
+
+footer{
+    background-color: rgb(49, 73, 100) !important;
+    background-image: none;
+    height: 165px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 200px;
+ 
+}
+#footer-text{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+
+}
+.contenuto_footer{
+    color: white;
+    height: 140px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-left: 30px;
+    margin: 0;
+}
+
+.contenuto_footer p{
+    margin: 0;
+
+}
+
+#info{
+    text-decoration: none !important;
+    color: white;
+    font-size: 20px;
+}
+/*FINE FOOTER*/
+
+.top {
+    /*BENVENUTO UTENTE*/
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    height: 60px;
+}
+
+.corpo-centrale {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 2px; 
+}
+
+.corpo-centrale2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 750px;  
+    height: 770px;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/* ------------------------------NAV------------------------------------ */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    padding-bottom: 5px;
+    
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    background-color: rgb(49, 73, 100);
+    align-items: center;
+    /* border: 3px solid rgb(49, 73, 100); */
+    height: 33px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    border: 5px solid rgb(49, 73, 100);
+    height: 20px;
+    width: 250px;
+}
+
+.main-nav a {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+ 
+}
+
+.main-nav a:hover {
+    transform: scale(1.4);
+}
+
+.home-button {
+    height: 110px !important;
+    width: 110px !important;
+    border-radius: 100%;
+    background-image: url(../css/img/b-ball.png);
+    background-size: cover;
+    /* border: 2px solid rgb(49, 73, 100); */
+    background-color: rgb(49, 73, 100);
+}
+
+.home-button a {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    
+}
+
+.home-button div {
+    height: 20px;
+    width: 100px;
+    position: relative;
+    background-color: rgb(49, 73, 100);
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/*  --------------------------BUTTON LOGIN--------------------------------*/
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+.login ul {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 120px;
+    padding: 2px;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+.login li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 100%;
+    /* border: 2px solid rgb(49, 73, 100); */
+    height: 47px;
+    width: 47px;
+    text-align: center;
+    background-color: rgb(49, 73, 100);
+}
+
+.login a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+/* ----------------------INTERFACCIA UTENTE LOGGATO---------------------- */
+
+.loggato{
+    height: 60px;
+}
+
+.loggato ul{
+    list-style-type: none;  
+    color: rgb(49, 73, 100);
+    font-size: 20px;
+    font-weight: bold;  
+    margin-left: 40px !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px !important;
+    height: 54px;
+}
+
+.loggato ul li {
+    height: 23px !important;
+    display: flex;
+    align-items: center;
+}
+
+.loggato ul li a {
+    text-decoration: none;
+    color: rgb(49, 73, 100);
+}
+
+.amministratore{
+    margin-right: 20px;
+}
+
+.amministratore img {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*----------------------FORMAZIONE E NOMI GIOCATORI -----------------------*/
+
+#dreamteam{
+    width: 280px;
+    height: 126px;
+    margin-bottom: 13px;
+    margin-top: 25px;
+}
+
+#title{
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(49, 73, 100);
+}
+
+.jersey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100px ;
+    height: 146px ;
+    background-image: url("../css/img/basket-jersey.png");
+    margin-left: 140px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bold;   
+    color: rgb(255, 255, 255);
+    
+}
+
+.j-name{
+    height: 100px;
+    width: 100px;
+}
+
+.nome{
+    width: 90px;
+    margin-left: 4px;
+    margin-top: 6px;
+    margin-bottom : 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    word-wrap: break-word;
+} 
+
+.ruolo{
+    width: 90px;
+    font-size: 30px;
+    margin-left: 4px;
+    color: rgb(255, 255, 255);
+
+} 
+
+#playmaker{
+    margin-left: 310px !important;
+ 
+}
+
+.formazione {
+    width: 750px;
+    height: 600px;
+    background-image: url("../css/img/court.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 15px solid rgb(49, 73, 100);
+    border-bottom: 15px solid rgb(49, 73, 100);
+    border-left: 3px solid rgb(49, 73, 100);
+    border-right: 3px solid rgb(48, 72, 99);
+    border-radius: 10px;
+    
+}
+
+.formazione table {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-spacing: inherit;
+    
+}
+
+.formazione table tbody tr td {
+    padding: 0px;
+    width: 370px;
+    height: 196px;
+    vertical-align: middle;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+
+/*----------------------TABELLA PER LA CLASSIFICA -------------------*/
+.intestazione-tabella{
+    height: 42px !important;
+    width: 250px !important;
+}
+
+.intestazione-tabella th{
+    font-weight: bold !important;
+    background-color: rgb(49, 73, 100);
+    height: 42px;   
+    border-radius: 10px !important;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.table-classifica td{
+    border-bottom: 1px solid white !important;
+    height: 30px !important;
+    border-radius: 7px !important;
+    vertical-align: middle;
+}
+
+.aside-classifica {
+    width: 250px;
+    height: 700px;
+    margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(61, 62, 63, 0.596); 
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(49, 73, 100); 
+    border-radius: 10px;
+}
+
+.small-th {
+    width: 42px;
+    height: 42px;
+}
+
+.table-classifica {
+    text-align: center;
+    max-height: 700px;
+    width: 100%;
+    border-radius: 10px;
+    border-spacing: 2px !important;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/*---------------------TABELLA CAMPIONATI ATTIVI UTENTE------------------- */
+.tab-campionati {  
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;  
+    text-align: center;
+    width: 655px;
+    height: 140px;
+    background-color: rgba(61, 62, 63, 0.596); 
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(49, 73, 100); 
+    border-radius: 10px;
+
+}
+
+.tab-campionati tbody{
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: inline-block;
+    /* flex-direction: column;
+    justify-content: flex-start; */
+    align-items: flex-start;
+    height: 95px !important;
+    margin-top: 5px !important;
+    width: 100% !important;
+    
+   
+}
+.tab-campionati thead{
+    height: 40px !important;
+    width: 100% !important;
+    display: flex;
+    align-items: flex-start ;
+    justify-content: flex-start;
+
+}
+
+.tab-campionati thead tr th{
+    width: 125px !important;
+    height: 38px !important;
+    font-weight: bold;
+    background-color: rgb(49, 73, 100);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 2px;   
+    margin-top: 2px;
+}
+
+.tab-campionati tbody tr td{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 30px !important;  
+    width: 125px; 
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px !important;  
+}
+
+.long-td{
+    width: 96.5% !important;
+}
+
+.tab-campionati tr{
+    height: 38px !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.campionati {
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.click_me{
+    cursor: pointer;
+}
+/* --------------------------------------------------------------------------------- */
